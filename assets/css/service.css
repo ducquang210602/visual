@@ -1,0 +1,9 @@
+.category-service {
+    width: 100%;
+    height: 100vh;
+    padding: 100px 0;
+}
+
+.category-service:nth-of-type(even) {
+    background-color: wheat;
+}
