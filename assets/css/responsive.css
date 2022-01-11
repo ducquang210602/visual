@@ -197,12 +197,29 @@
     #review-slider .col.m-6 {
         width: 50%;
     }
+
+    #review-slider .col.second {
+        left: 50%;
+        transform: translateX(0);
+    }
+
+    #review-slider .col.first {
+        left: 150%;
+    }
+
+    .produce__heading {
+        margin-top: 30px;
+    }
 }
 
 /* Mobile */
 @media (max-width: 739px) {
     .hide-on-mobile {
         display: none !important;
+    }
+
+    .produce__heading {
+        margin-top: 20px;
     }
 
     .header__logo-img {
