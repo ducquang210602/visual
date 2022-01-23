@@ -32,7 +32,6 @@ navItems.forEach(navItem => {
     })
 })
 
-// Handle when scroll change background header
 document.addEventListener('scroll', function () {
     let scrollValue = window.scrollY || document.documentElement.scrollTop
     if (scrollValue == 0) {
@@ -44,14 +43,12 @@ document.addEventListener('scroll', function () {
     }
 })
 
-// Clicked go to contact page
 contactBtn.onclick = function () {
     document.querySelector('.page.active').classList.remove('active')
     pages[1].classList.add('active')
     window.scrollTo(0, 0)
 }
 
-// Handle clicked back main page
 btnsMovePageMain.forEach(btnItem => {
     btnItem.onclick = function () {
         if (!pages[0].classList.contains('active')) {
@@ -61,7 +58,6 @@ btnsMovePageMain.forEach(btnItem => {
     }
 })
 
-// Handle clicked next btn slider main
 btnNextSlider.addEventListener('click', function () {
     sliderIndex++
     if (sliderIndex >= listSliderMain.length) {
@@ -72,7 +68,6 @@ btnNextSlider.addEventListener('click', function () {
     autoplaySliderMain()
 })
 
-// Handle clicked prev btn slider main
 btnPrevSlider.addEventListener('click', function () {
     sliderIndex--
     if (sliderIndex < 0) {
@@ -83,7 +78,6 @@ btnPrevSlider.addEventListener('click', function () {
     autoplaySliderMain()
 })
 
-// Create interval autoplay slider and add event clicked button next, prev slider
 function autoplaySliderMain() {
     const autoplay = setInterval(function () {
         btnNextSlider.click()
